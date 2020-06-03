@@ -34,6 +34,14 @@ public class ParkingLot {
         return null;
     }
 
+    public int GetParkingSize(){
+        return this.size;
+    }
+
+    public int GetParkingCount(){
+        return this.count;
+    }
+
     public boolean IsFull() {
         return count == size;
     }

@@ -8,7 +8,8 @@ public class ParkingSeniorBoy extends ParkingBoy{
     }
 
     public ParkingLot ParkCar(Car car) {
-        ParkingLot parkingLot = Collections.max(parkingLots, Comparator.comparing(x -> x.GetParkingLotRemainingCount()));
+        ParkingStrategyContext parkingStrategyContext = new ParkingStrategyContext(new RemainingCountStrategy());
+        ParkingLot parkingLot = Collections.max(parkingLots, Comparator.comparing(x -> parkingStrategyContext.executeParkingStrategy(x.GetParkingSize(), x.GetParkingCount())));
         parkingLot.Park(car);
         return parkingLot;
     }
