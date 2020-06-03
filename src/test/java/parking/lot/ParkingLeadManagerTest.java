@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 public class ParkingLeadManagerTest {
     @Test
     public void ShouldParkingCarToLotWithMaxSpaceRate(){
-        ParkingLeadBoy parkingLeadManager = new ParkingLeadBoy("PL");
+        ParkingBoy parkingLeadManager = new ParkingLeadBoy("PL");
         ParkingLot parkingLot1 = new ParkingLot("parkingLot1",1);
         ParkingLot parkingLot2 = new ParkingLot("parkingLot2",2);
 

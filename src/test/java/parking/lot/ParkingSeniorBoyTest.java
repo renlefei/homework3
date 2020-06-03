@@ -6,7 +6,7 @@ public class ParkingSeniorBoyTest {
 
     @Test
     public void ShouldParkingCarToLotWithMaxSpace(){
-        ParkingSeniorBoy parkingSeniorManager = new ParkingSeniorBoy("P1");
+        ParkingBoy parkingSeniorManager = new ParkingSeniorBoy("P1");
         ParkingLot parkingLot1 = new ParkingLot("parkingLot1",3);
         ParkingLot parkingLot2 = new ParkingLot("parkingLot2",2);
 
