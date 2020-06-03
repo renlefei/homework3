@@ -6,7 +6,7 @@ public class ParkingBoyTest {
 
     @Test
     public void ShouldParkCatToFirstParkingLotWithSpace(){
-        ParkingJuniorBoy parkingBoy = new ParkingJuniorBoy("PJ");
+        ParkingBoy parkingBoy = new ParkingJuniorBoy("PJ");
         ParkingLot parkingLot1 = new ParkingLot("parkingLot1", 1);
         ParkingLot parkingLot2 = new ParkingLot("parkingLot1", 1);
 
