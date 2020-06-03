@@ -15,7 +15,9 @@ public class ParkingLotTest {
     public void ShouldCouldPickUpCar(){
         ParkingLot parkingLot = new ParkingLot("parkingLot2",3);
         Car car = new Car();
+        Car car2 = new Car();
         parkingLot.Park(car);
         assert car == parkingLot.PickUp(car);
+        assert car2 != parkingLot.PickUp(car2);
     }
 }
